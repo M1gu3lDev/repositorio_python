@@ -1,0 +1,131 @@
+"""notas = []
+contador = 0
+for n in range(0, 5):
+    adicionar = int(input("escreva a nota 2"))
+    notas.append(adicionar)
+    if adicionar > 8:
+        contador += 1
+
+
+print(f"da lista: {notas} ao todo foram {contador} notas maior que 8")"""
+
+
+
+
+"""import random
+lista = []
+for n in range(0, 5):
+    lista.append(random.randint(0, 10))
+
+
+
+
+soma = 0
+menor = lista[0]
+impar = 0
+
+
+for e in lista:
+    soma += e
+   
+    if menor > e:
+        menor = e
+    if e % 2 == 1:
+        impar += 1
+
+
+print(f" da lista: {lista} a soma de todos os elementos é {soma} o menor número é {menor} e a quantidade de ímpares é {impar}.")"""
+
+
+"""sair = " "
+lista_times = []
+
+
+
+
+
+
+
+
+while sair != "s":
+    times = []
+    add_time = input("digite qual o nome do time ")
+    estado = input("digite o estado do time ")
+    pontuacao = int(input("digite a pontução do time "))
+   
+    times.append(add_time)
+    times.append(estado)
+    times.append(pontuacao)
+
+
+
+
+    lista_times.append(times)
+   
+    sair = input("deseja sair? [s/n]").lower()
+
+
+
+
+print(lista_times)
+
+
+# mostra a lista de times PB e PE com mais de 100"
+print("\n lista de de times PB e PE com mais de 100: ")
+
+
+for t in lista_times:
+    if "PB" == t[1] or "PE" == t[1] and 100 == t[2]:
+        print("\n", t[0])
+
+
+# mostra a pontuação de um time digitado pelo usuário
+usuario = input("\ndigite o nome de um time: ")
+print(f"\npontuação do {usuario}: ")
+for t in lista_times:
+    if usuario in t:
+        print(t[2])
+
+
+# mostra a pontuação dos times mineros
+print("\n times de minas gerais: ")
+for t in lista_times:
+    if "MG" == t[1]:
+        print(t)
+
+
+# mostra a média dos times RJ
+contador = 0
+soma = 0
+for t in lista_times:
+    if "RJ" == t[1]:
+        soma += t[2]
+        contador += 1
+
+
+print(f"\nA média dos times do rio é de {soma/contador}")
+
+
+#Time campeão
+empate = False
+maior_time = 0
+maior_ponto = 0
+for t in lista_times:
+    if t[2] > maior_ponto:
+        maior_ponto = t[2]
+        maior_time = t[0]
+
+
+for t in lista_times:
+    if maior_time != t[0] and maior_ponto == t[2]:
+        empate = True
+
+
+
+
+if empate :
+    print("empate não houve vencedor")
+else:
+    print(f"\n o vencedor é {maior_time}")"""
+
+
